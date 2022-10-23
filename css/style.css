@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    padding: 0%;
+}
+.container{
+    width: 100%;
+    position: relative;
+}
+nav{
+    position:fixed;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    color: #000;
+    z-index: 1000;
+    background-color:red;   
+}
+li{
+    width: 74%;
+    position: relative;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ul{
+    margin: 10px 0px;
+    padding: 0px;
+    text-align: center;
+}
+.add{
+    background-color:chartreuse;
+}
+.del{
+    background-color:orange;
+}
+.bot{
+    display: block;
+    padding-top: 5px;
+    width: 140px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+.input{
+    position: relative;
+    height:20px;
+
+}
+.input#title{
+    width:100px;
+}
+.input#desc{
+    width:200px;
+}
+main{
+    position: relative;
+    margin: 90px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    width: 80%;
+}
+.postit{
+    position: relative;
+    top: 10px;
+    width: 160px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: aquamarine;
+    cursor: grab;
+    box-shadow: 2px 2px 3px gray;
+    transition: .2s linear;
+    border: 1px solid black;
+}
+.postit:hover{
+    top:15px;
+    border: 1px solid white;
+    transform: scale(1.2, 1.2);
+    z-index: 999;
+}
+.title{
+    position: relative;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    text-align: justify    ;
+}
+.cor0{
+    background-color: pink;
+}
+.cor1{
+    background-color: lightgreen;
+}
+.cor2{
+    background-color: yellow;
+}
+img{
+    position:absolute;
+    top:-15px;
+    transform: rotate(30deg);
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+}
+span.size{
+    display:inline-block;
+    font-weight: bold;
+    text-align: left;
+    width: 100px;
+    height: 20px;
+}
+.imp{
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    margin-left: -50px;
+    margin-top: 3px;
+    padding-left: 50px;
+    color: beige;
+    font-weight: bold;
+}
+@media screen and (max-width: 480px){
+    li{
+        width: 100%;
+    }
+    .postit{
+        width: 100%;
+    }
+    main{
+        margin-top: 200px;
+    }
+    .input#desc, .input#title{
+        width: 150px;
+    }
+    .postit:hover{
+        transform: scale(1.2, 1.2);
+    }
+    .check{
+        width: 250px;
+    }
+}

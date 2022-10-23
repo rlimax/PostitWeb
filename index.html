@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/functions.js"></script>
+    <title>Post-it</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <li>
+                <ul class="white"><label for="title" class="size imp">Título</label><input id="title" class="input" type="text" maxlength="20"></ul>
+                <ul class="white"><label for="desc" class="size imp">Descrição</label><input id="desc" class="input" type="text" maxlength="65"></ul>
+                <ul><div class="check"><label for="imp" class="imp">Importante?</label>&nbsp;&nbsp;<input id="imp" type="checkbox"></div></ul>
+                <ul><span class="add bot" onclick="add()">Adicionar nota</span>&nbsp;&nbsp;<span class="del bot" onclick="rem()">Limpar notas</span></ul>
+            </li>
+        </nav>
+        <main>
+            <div class="postit">
+                <span class="title">Título</span><img src="./img/star.png"><br>
+                <span class="text">Descrição da atividade que deve ser executada.</span>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
